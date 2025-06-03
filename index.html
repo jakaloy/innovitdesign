@@ -1,22 +1,40 @@
 <body>
-    <div class="header">
-        How's Jake doing?
+    <div class="headercontainer">
+        <div class="header">
+            How's Jake doing?
+        </div>
+        <div class="update note">
+            Note: I will update this page, likely in the evening, whenever I get an update. The doctors will try to update us every day, but if they don't, no news is good news.
+        </div>
     </div>
+    <!-- insert new sections here -->
     <div class="updatesection">
-        <div class="title">Tuesday, June 3</div>
+        <div class="title">Tuesday, June 3 Evening</div>
         <div class="update">
-            Due to scheduling conflicts, the tracheostomy is scheduled for Thursday, June 5. If someone canceles he will be pushed up. They do not want him relying on the ventilator for such a long time, so they are trying to ween him off. Give his lungs a chance to do some work while he waits. Today, they reduced the sedation and stopped the ventilator for about ten minutes before his vitals dropped enough that they started it back up again. While he was conscious they tried communicating with him a bit, but his only response was shaking his head so they increased the sedation again. <br/><br/> They plan on taking him off the ventilator later today and tomorrow, giving him a few hours each time to keep his lung strength up before his surgury.
+            <div>
+                Krissy went up to visit today. She had a great visit. When she walked in, expecting him to be sleeping, she said "Hi, Honey" and his eyes popped open. She stayed for about an hour and a half. He couldn't talk very well, and had to repeat himself, sometimes just saying the first letter of the word he was trying to say to help her figure it out. He tried to get her to go out and get him some pie before a nurse stopped her saying he couldn't actually eat it. She asked if he wanted to listen to some music, he nodded. She asked, "Ween?" and his eyes flew open.
+            </div><br/>
+            <div>
+                They listened to some music and talked for a while before she headed out, making sure he had something to listen to so he wasn't sitting in silence.
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="updatesection">
+        <div class="title">Tuesday, June 3 Morning</div>
+        <div class="update">
+            Due to scheduling conflicts, the tracheostomy is scheduled for Thursday, June 5. If someone canceles he will be pushed up. They do not want him relying on the ventilator for such a long time, so they are trying to ween him off. Give his lungs a chance to do some work while he waits. Today, they reduced the sedation and stopped the ventilator for about ten minutes before his vitals dropped enough that they started it back up again. While he was conscious they tried communicating with him a bit, but his only response was shaking his head so they increased the sedation again.
+            <br/><br/>They plan on taking him off the ventilator later today and tomorrow, giving him a few hours each time to keep his lung strength up before his surgury.
         </div>
     </div>
     <div class="divider"></div>
     <div class="updatesection">
         <div class="title">Monday, June 2</div>
         <div class="update">
-            <div>Jake was sleeping all day. He had been using the nose oxygen tubes for the past day to increase his oxygen levels. While that was enough to keep him in a reasonble range, he was still building up too much CO2. To try to help that, the doctors put him on BiPAP, the mask that goes over his mouth to assist his breathing. After a few hours on that and checking his CO2 levels, they determined it was not enough. His CO2 levels were still rising too high. In addition to that, the fluid in his lungs was still not coming out, which was a bigger concern.</div><br/><div> At this point, the doctors recommented intubation. Jake, while willing, was not a fan of this idea. The doctors worried that, should they wait, Jake could end up requiring intubation emergently. After some conversing, and Uncle Tim's third opinion, Jake agreed and the procedure was started. Unfortunately, due to the metal rods in his neck, intubation proved impossible. Fortunately, because the procedure was not an emergency, they had the time to replan and ended up putting a temporary tube through Jake's throat for the ventilator with near future plans on giving him a tracheostomy.<br/><br/>Due to all of this, Jake is stable. For the rest of the day he was kept sedated and resting.</div>
+            <div>Jake was sleeping all day. He had been using the nose oxygen tubes for the past day to increase his oxygen levels. While that was enough to keep him in a reasonble range, he was still building up too much CO2. To try to help that, the doctors put him on BiPAP, the mask that goes over his mouth to assist his breathing. After a few hours on that and checking his CO2 levels, they determined it was not enough. His CO2 levels were still rising too high. In addition to that, the fluid in his lungs was still not coming out, which was a bigger concern.</div>
+            <br/><div> At this point, the doctors recommented intubation. Jake, while willing, was not a fan of this idea. The doctors worried that, should they wait, Jake could end up requiring intubation emergently. After some conversing, and Uncle Tim's third opinion, Jake agreed and the procedure was started. Unfortunately, due to the metal rods in his neck, intubation proved impossible. Fortunately, because the procedure was not an emergency, they had the time to replan and ended up putting a temporary tube through Jake's throat for the ventilator with near future plans on giving him a tracheostomy.
+            <br/><br/>Due to all of this, Jake is stable. For the rest of the day he was kept sedated and resting.</div>
         </div>
-    </div>
-    <div class="update note">
-        Note: I will update this page, likely in the evening, whenever I get an update. The doctors will try to update us every day, but if they don't, no news is good news.
     </div>
 </body>
 <style>
@@ -28,6 +46,10 @@
         font-family:Helvetica;
         border-radius:15px;
         cursor:default;
+    }
+    .headercontainer{
+        height:max-content;
+        width:auto;
     }
     .header{
         height:100px;
@@ -55,13 +77,12 @@
         }
     }
     .title{
-        height:20px;
+        height:auto;
         width:fit-content;
         display:flex;
         align-items:center;
         padding:6px;
-        padding-top:.8rem;
-        font-size:1.4rem;
+        font-size:1rem;
     }
     .update{
         height:auto;
@@ -71,7 +92,6 @@
         text-indent:25px;
         text-wrap:wrap;
         font-size:1rem;
-        padding-top:.6rem;
     }
     .title, .update{
         padding-left:8vw;
@@ -80,6 +100,7 @@
         border:2px solid #623313;
         padding-left:1vw;
         padding-right:1vw;
+        padding-top:.6rem;
     }
     .divider{
         height:8px;
@@ -95,11 +116,15 @@
         border-radius:0px;
     }
     .note{
+        max-width:100%;
         width:max-content;
         text-indent:0px;
         padding-top:11px;
-        display:flex;
-        float:right;
-        margin-top:0px;
+        margin-top:8px;
+        margin-bottom:8px;
+        margin-left:auto;
+        margin-right:0;
+        font-size:1rem;
+        word-wrap:wrap;
     }
 </style>
