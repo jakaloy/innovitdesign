@@ -12,22 +12,24 @@
     <div class="updatesection">
         <div class="title">Monday, June 2</div>
         <div class="update">
-            Jake was sleeping all day. He had been using the nose oxygen tubes for the past day to increase his oxygen levels. While that was enough to keep him in a reasonble range, he was still building up too much CO2. To try to help that, the doctors put him on BiPAP, the mask that goes over his mouth to assist his breathing. After a few hours on that and checking his CO2 levels, they determined it was not enough. His CO2 levels were still rising too high. In addition to that, the fluid in his lungs was still not coming out, which was a bigger concern. <br/><br/> At this point, the doctors recommented intubation. Jake, while willing, was not a fan of this idea. The doctors worried that, should they wait, Jake could end up requiring intubation emergently. After some conversing, and Uncle Tim's third opinion, Jake agreed and the procedure was started. Unfortunately, due to the metal rods in his neck, intubation proved impossible. Fortunately, because the procedure was not an emergency, they had the time to replan and ended up putting a temporary tube through Jake's throat for the ventilator with near future plans on giving him a tracheostomy. <br/><br/> Due to all of this, Jake is stable. For the rest of the day he was kept sedated and resting.
+            <div>Jake was sleeping all day. He had been using the nose oxygen tubes for the past day to increase his oxygen levels. While that was enough to keep him in a reasonble range, he was still building up too much CO2. To try to help that, the doctors put him on BiPAP, the mask that goes over his mouth to assist his breathing. After a few hours on that and checking his CO2 levels, they determined it was not enough. His CO2 levels were still rising too high. In addition to that, the fluid in his lungs was still not coming out, which was a bigger concern.</div><br/><div> At this point, the doctors recommented intubation. Jake, while willing, was not a fan of this idea. The doctors worried that, should they wait, Jake could end up requiring intubation emergently. After some conversing, and Uncle Tim's third opinion, Jake agreed and the procedure was started. Unfortunately, due to the metal rods in his neck, intubation proved impossible. Fortunately, because the procedure was not an emergency, they had the time to replan and ended up putting a temporary tube through Jake's throat for the ventilator with near future plans on giving him a tracheostomy.<br/><br/>Due to all of this, Jake is stable. For the rest of the day he was kept sedated and resting.</div>
         </div>
     </div>
 </body>
 <style>
     body{
-        background:#DB8448;
+        height:100%;
+        background:linear-gradient(340deg,#4F311C,#7D4D2C);
     }
     *{
         font-family:Helvetica;
         border-radius:15px;
+        cursor:default;
     }
     .header{
         height:100px;
-        width:100%;
-        background:#AF5C23;
+        width:stretch;
+        background:linear-gradient(90deg,#4F311C 0%,#B1764E 40%,#B1764E 60%,#4F311C 100%);
 
         display:flex;
         align-items:center;
@@ -37,19 +39,21 @@
         padding-top:8px;
     }
     .updatesection{
-        background:#E09561;
+        background:radial-gradient(#B1764E,#754829);
         height:auto;
         width:inherit;
         margin-top:8px;
         margin-bottom:8px;
         padding:8px;
+        border:8px solid #B1764E;
     }
-
+    .updatesection { .updatesection&:nth-child(1 of &):not(:has(&) ~ * *):not(:has(&) ~ *):not(& ~ * *):not(& *) {
+            border:8px solid #C77238;
+        }
+    }
     .title{
         height:20px;
         width:fit-content;
-        background:#B76024;
-
         display:flex;
         align-items:center;
         padding:6px;
@@ -58,7 +62,6 @@
     .update{
         height:auto;
         width:inherit;
-        background:#B76024;
         margin-top:8px;
         padding:6px;
         text-indent:25px;
@@ -68,6 +71,7 @@
         font-size:16px;
         padding-left:8vw;
         padding-right:8vw;
+        background:#B1764E;
         border:1px solid #623313;
         padding-left:1vw;
         padding-right:1vw;
@@ -75,8 +79,14 @@
     .divider{
         height:8px;
         width:inherit;
-        background:#623313;
+        background:#402817;
         margin-top:8px;
         margin-bottom:8px;
+    }
+    .headerbase{
+        height:12px;
+        width:initial;
+        background:#402817;
+        border-radius:0px;
     }
 </style>
