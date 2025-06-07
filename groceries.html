@@ -1,0 +1,47 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Groceries</title>
+<body>
+    <a href="groceries.html">back</a>
+    <a href="#e">black</a>
+    <a href="#f">blue</a>
+    <div id='e'></div>
+    <div id='f'></div>
+</body>
+<style>
+    body{
+        width:auto;
+        min-height:100vh;
+        background:linear-gradient(135deg,#cf9aff,#95c0ff);
+    }
+    #e:target{
+        background:black;
+        z-index:2;
+    }
+    #f:target{
+        background:blue;
+        z-index:2;
+    }
+    #e, #f{
+        width:200px;
+        height:100px;
+        background:white;
+        border-radius:20px;
+        margin:8px;
+        position:absolute;
+        z-index:1;
+    }
+    button{
+        margin:8px;
+        align-content:center;
+    }
+    #one:active{
+        background:blue;
+    }
+    #two:active{
+        background:green;
+        .d{
+            background:black;
+        }
+    }
+</style>
