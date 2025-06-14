@@ -1,10 +1,104 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<video src="deerfoxdeer.mp4" controls></video>
+<body>
+    <div class="header">Dashcam Videos</div>
+    <div class='videos'>
+        <div class="videocontainer">
+            <video src="deerfoxdeer.mp4" controls></video>
+            <div class="title"> Deer Fox Deer </div>
+            <div class="date">June 6 2025</div>
+            <div class="description">Two deer calmly cross the road, two adorable baby red foxes romp in the middle of the street, then another deer forgot it left the stove on and had to rush back home</div>
+        </div>
+        <div class='videocontainer'>
+            <video src='gotem.mp4' controls></video>
+            <div class='title'>Crow No Mo</div>
+            <div class='date'>June 13 2025</div>
+            <div class='description'>Crow decides to pick fight with car. Not shown: crow's friend is now riding solo</div>
+        </div>
+    </div>
+</body>
 <style>
+    *{
+        font-family:Helvetica;
+    }
+    body{
+        background: #58A7A7;
+        margin:0;
+    }
+    .header{
+        display:grid;
+        place-items:center;
+        height:100px;
+        width:100%;
+        background:#0C1717;
+        font-size:4rem;
+        color:#ECDADA;
+    }
+    .videos{
+        display:flex;
+        gap:1rem;
+        padding:1rem;
+    }
+    .videocontainer{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        height:max-content;
+        min-height:20rem;
+        overflow:hidden;
+        width:30rem;
+        background:#DAECEC;
+        border-radius:1rem;
+        border:4px solid black;
+    }
     video{
-        width:80%;
-        height:auto;
+        width:96%;
+        min-height:auto;
         margin:1vw;
+    }
+    .title{
+        font-size:1.5rem;
+        font-weight:bold;
+        margin-left:1rem;
+        margin-right:auto;
+        width:95%;
+    }
+    .date{
+        font-size:.8rem;
+        margin-left:1rem;
+        margin-right:auto;
+    }
+    .description{
+        font-size:1rem;
+        margin-left:1rem;
+        margin-right:auto;
+        margin-top:.2rem;
+        margin-bottom:.4rem;
+        height:3.5rem;
+        width:95%;
+        overflow-y:auto;
+    }
+    @media (max-width:600px){
+        .header{
+            font-size:3rem;
+        }
+        .title{
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+        }
+        .description{
+            height:3rem;
+        }
+        .videos{
+            display:block;
+            width:90%;
+            height:auto;
+        }
+        .videocontainer{
+            margin-bottom:1rem;
+            width:100%;
+            padding-bottom:0px;
+        }
     }
 </style>
