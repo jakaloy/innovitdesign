@@ -2,6 +2,7 @@
     <div class="headercontainer">
         <div class="header">
             <span class="boogleft"><img src="boognish.svg"></span>
+            <a href="video.html" class='basiclink'>Dashcam Videos</a>
             How's Jake doing?
             <span class="boogright"><img src="boognish.svg"></span>
         </div>
@@ -10,9 +11,9 @@
         </div>
     </div>
     <div id='newsite'>
-        <a href="http://www.howsjakedoing.com">New website</a>
-        <a href="http://www.howsjakedoing.com">www.howsjakedoing.com</a>
-        <a href="http://www.howsjakedoing.com">Click here to go</a>
+        <a href="http://www.howsjakedoing.com" class='n'>New website</a>
+        <a href="http://www.howsjakedoing.com" class='n'>www.howsjakedoing.com</a>
+        <a href="http://www.howsjakedoing.com" class='n'>Click here to go</a>
     </div>
     <!-- insert new sections here -->
 	<div class="updatesection">
@@ -187,7 +188,7 @@
         position:fixed;
         z-index:1;
     }
-    a{
+    .n{
         background:#edc6a6;
         font-size:4rem;
         padding:1rem;
@@ -196,12 +197,22 @@
         color:blue;
         text-decoration:none;
     }
-    a:hover{
+    .n:hover{
         cursor:pointer;
     }
     video{
         width:90%;
         height:auto;
         margin:16px;
+    }
+    .basiclink{
+        font-size:2rem;
+        position:absolute;
+        left:4rem;
+        top:7rem;
+        color:white;
+    }
+    .basiclink:hover{
+        cursor:pointer;
     }
 </style>
